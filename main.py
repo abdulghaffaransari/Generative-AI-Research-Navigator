@@ -23,6 +23,18 @@ for i in range(3):
     urls.append(url)
 
 process_url_clicked = st.sidebar.button("Process URLs")
+file_path = "faiss_store_openai.pkl"
+
+main_placeholder = st.empty()
+llm = OpenAI(temperature=0.9, max_tokens=500)
 
 if process_url_clicked:
-    pass
+    # load data
+    loader = UnstructuredURLLoader(urls=urls)
+    main_placeholder.text("Data Loading...Started...✅✅✅")
+    data = loader.load()
+    # split data
+    text_splitter = RecursiveCharacterTextSplitter(
+        separators=['\n\n', '\n', '.', ','],
+        chunk_size=1000
+    )
