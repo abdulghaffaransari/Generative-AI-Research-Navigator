@@ -17,7 +17,7 @@ Welcome to the **Generative AI Research Navigator**! This tool leverages cutting
 - [License](#license)
 
 ## Project Overview
-The **Generative AI Research Navigator** is designed to streamline the process of extracting and analyzing information from news articles. By leveraging technologies such as FAISS, LangChain, and OpenAI, this tool provides users with a sophisticated platform for conducting in-depth research and gaining valuable insights.
+The **Generative AI Research Navigator** is designed to streamline the process of extracting and analyzing information from news articles. By leveraging technologies such as FAISS, LangChain, and Meta Llama 3.2, this tool provides users with a sophisticated platform for conducting in-depth research and gaining valuable insights.
 
 ## Features
 - **Data Loading**: Load and process data from multiple news article URLs.
